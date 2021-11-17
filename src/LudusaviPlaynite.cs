@@ -19,7 +19,7 @@ namespace LudusaviPlaynite
     {
         private static readonly ILogger logger = LogManager.GetLogger();
         public LudusaviPlayniteSettings settings { get; set; }
-        public override Guid Id { get; } = Guid.Parse("72e2de43-d859-44d8-914e-4277741c8208");
+        public override Guid Id { get; } = Guid.Parse("f2054852-a88c-4c0a-b7e9-a41c5b8696b2");
 
         private Translator translator;
         private Timer timer;
@@ -438,6 +438,7 @@ namespace LudusaviPlaynite
                 NotifyError($"The program does not have permission" +
                             $" to access the directory {sourceDir}");
             }
+
             subDirs = null;
 
             return true;

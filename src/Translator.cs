@@ -20,7 +20,7 @@ namespace LudusaviPlaynite
             switch (language)
             {
                 default:
-                    return "Ludusavi";
+                    return "AutoSave";
             }
         }
 

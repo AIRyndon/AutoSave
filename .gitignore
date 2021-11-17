@@ -3,3 +3,5 @@ dist/
 obj/
 tmp/
 *.sln
+.idea
+.vs

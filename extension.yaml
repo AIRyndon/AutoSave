@@ -1,17 +1,19 @@
-﻿Id: mtkennerly.ludusavi
-Name: Ludusavi
-Author: Matthew T. Kennerly
-Version: 0.6.0
+﻿Id: AIRyndon.AutoSave
+Name: AutoSave
+Author: Angelo I. Ryndon
+Version: 1.0.0
 Module: LudusaviPlaynite.dll
 Type: GenericPlugin
 Icon: icon.png
 Links:
-  - Name: Plugin homepage
+  - Name: Plugin Homepage
+    Url: https://github.com/AIRyndon/AutoSave
+  - Name: Ludusavi-Playnite homepage
     Url: https://github.com/mtkennerly/ludusavi-playnite
   - Name: Ludusavi homepage
     Url: https://github.com/mtkennerly/ludusavi
   - Name: Manifest homepage
     Url: https://github.com/mtkennerly/ludusavi-manifest
 UpdaterConfig:
-  GitHubUser: mtkennerly
-  GitHubRepo: ludusavi-playnite
+  GitHubUser: AIRyndon
+  GitHubRepo: AutoSave

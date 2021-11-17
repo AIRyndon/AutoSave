@@ -20,7 +20,7 @@ def build(ctx):
 
 
 @task
-def pack(ctx, toolbox="~/AppData/Local/Playnite/Toolbox.exe"):
+def pack(ctx, toolbox="~/AppData/Roaming/Playnite/Toolbox.exe"):
     target = REPO / "dist/raw"
     if target.exists():
         shutil.rmtree(str(target))
@@ -32,14 +32,14 @@ def pack(ctx, toolbox="~/AppData/Local/Playnite/Toolbox.exe"):
     ctx.run('"{}" pack "{}" dist'.format(toolbox, target))
     for file in glob(str(REPO / "dist/*.pext")):
         if "_" in file:
-            shutil.move(file, str(REPO / "dist/ludusavi-playnite-v{}.pext".format(get_version())))
+            shutil.move(file, str(REPO / "dist/auto-save-v{}.pext".format(get_version())))
 
-    shutil.make_archive(str(REPO / "dist/ludusavi-playnite-v{}".format(get_version())), "zip", str(target))
+    shutil.make_archive(str(REPO / "dist/auto-save-v{}".format(get_version())), "zip", str(target))
 
 
 @task
-def deploy(ctx, target="~/AppData/Local/Playnite/Extensions"):
-    target = Path(target).expanduser() / "Ludusavi"
+def deploy(ctx, target="~/AppData/Roaming/Playnite/Extensions"):
+    target = Path(target).expanduser() / "AutoSave"
     if target.exists():
         print(f"Deleting: {target}")
         shutil.rmtree(str(target))

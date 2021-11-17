@@ -1,8 +1,6 @@
-AddonId: mtkennerly.ludusavi
+AddonId: AIRyndon.AutoSave
 Packages:
-  - Version: 0.6.0
+  - Version: 1.0.0
     RequiredApiVersion: 6.0.0
-    ReleaseDate: 2021-10-08
-    PackageUrl: https://github.com/mtkennerly/ludusavi-playnite/releases/download/v0.6.0/ludusavi-playnite-v0.6.0.pext
-    Changelog:
-      - Playnite 9 support
+    ReleaseDate: 2021-11-17
+    PackageUrl: https://github.com/AIRyndon/AutoSave/releases/download/v1.0.0/auto-save-v1.0.0.pext
