@@ -2,7 +2,7 @@
 This fork of [ludusavi-playnite](https://github.com/mtkennerly/ludusavi-playnite) extends it with a few useful additions.
 
 ## Additions
-- Save backups incrementally while the game is running
+- Save backups on an interval while the game is running
 - Restore an individual game from a backup (the option won't be visible when multiple games are selected).
 - More error notifications on common actions, instead of throwing exceptions
 
