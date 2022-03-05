@@ -214,12 +214,12 @@ namespace LudusaviPlaynite
                 {
                     Directory.CreateDirectory(gameBackupCopiesPath);
                 }
-                catch (DirectoryNotFoundException e)
+                catch (DirectoryNotFoundException)
                 {
                     NotifyError($"The directory {gameBackupCopiesPath} can't be found");
                     return;
                 }
-                catch (UnauthorizedAccessException e)
+                catch (UnauthorizedAccessException)
                 {
                     NotifyError($"The program can't access the directory {gameBackupCopiesPath}");
                     return;
@@ -400,12 +400,12 @@ namespace LudusaviPlaynite
 
                 return false;
             }
-            catch (DirectoryNotFoundException ex)
+            catch (DirectoryNotFoundException)
             {
                 NotifyError($"Either the {sourceDir} or the {destDir} directory can't be found." +
                             $"{operation} operation cancelled");
             }
-            catch (UnauthorizedAccessException ex)
+            catch (UnauthorizedAccessException)
             {
                 NotifyError($"The program does not have permission to access " +
                             $"either the {sourceDir} or the {destDir} directory." +
@@ -429,11 +429,11 @@ namespace LudusaviPlaynite
 
                 return false;
             }
-            catch (DirectoryNotFoundException e)
+            catch (DirectoryNotFoundException)
             {
                 NotifyError($"The directory {sourceDir} can't be found.");
             }
-            catch (UnauthorizedAccessException e)
+            catch (UnauthorizedAccessException)
             {
                 NotifyError($"The program does not have permission" +
                             $" to access the directory {sourceDir}");
@@ -587,8 +587,8 @@ namespace LudusaviPlaynite
         private bool ShouldSkipGame(Game game)
         {
             return (game.Tags != null
-                    && game.Tags.Any(x => x.Name == "ludusavi-skip"))
-                   || game.Platforms.Count > 1;
+                && game.Tags.Any(x => x.Name == "ludusavi-skip"))
+                || (game.Platforms != null && game.Platforms.Count > 1);
         }
 
         string GetGameName(Game game)
