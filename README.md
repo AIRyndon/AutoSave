@@ -1,4 +1,4 @@
-This fork is now archived - the main project now has the multiple backup feature - [ludusavi-playnite](https://github.com/mtkennerly/ludusavi-playnite)
+Archived - the main project now has the multiple backup feature - [ludusavi-playnite](https://github.com/mtkennerly/ludusavi-playnite)
 
 # AutoSave
 This fork of [ludusavi-playnite](https://github.com/mtkennerly/ludusavi-playnite) extends it with a few useful additions.
