@@ -1,13 +1,13 @@
-Id: AIRyndon.AutoSave
+Id: ANRCorleone.AutoSave
 Name: AutoSave
-Author: Angelo I. Ryndon
+Author: Angelo Corleone
 Version: 1.0.1
 Module: LudusaviPlaynite.dll
 Type: GenericPlugin
 Icon: icon.png
 Links:
   - Name: Plugin Homepage
-    Url: https://github.com/AIRyndon/AutoSave
+    Url: https://github.com/ANRCorleone/AutoSave
   - Name: Ludusavi-Playnite homepage
     Url: https://github.com/mtkennerly/ludusavi-playnite
   - Name: Ludusavi homepage
@@ -15,5 +15,5 @@ Links:
   - Name: Manifest homepage
     Url: https://github.com/mtkennerly/ludusavi-manifest
 UpdaterConfig:
-  GitHubUser: AIRyndon
+  GitHubUser: ANRCorleone
   GitHubRepo: AutoSave
